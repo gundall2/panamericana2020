@@ -31,10 +31,9 @@
 			]
 		},
 
-		init: function (scope) {
-			var that = scope || this;
+		init: function () {
 			//BK-15873 Utilizamos this.parent declarada al inicio de la clase
-			this.parent.init.call(that);
+			this.parent.init.call(this.parent, this);
 			that.addActivityTitle();
 			if(window.esWeb) return;
 			that.addPageNumber();
