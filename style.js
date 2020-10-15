@@ -2,13 +2,13 @@
 	'use strict';
 
 	var Panamericana2020Style = function () {
-			blink.theme.styles.basic.apply(this, arguments);
+			blink.theme.styles.modern.apply(this, arguments);
 		},
 		page = blink.currentPage;
 
 	Panamericana2020Style.prototype = {
 		//BK-15873 añadimos el estilo basic como parent para la herencia de los estilos del CKEditor
-		parent: blink.theme.styles.basic.prototype,
+		parent: blink.theme.styles.modern.prototype,
 		bodyClassName: 'content_type_clase_panamericana2020',
 		extraPlugins: ['image2'],
 		ckEditorStyles: {
@@ -123,7 +123,7 @@
 		//BK15873 Quitamos la funcion getEditorStyles para que herede de parent
 	};
 
-	Panamericana2020Style.prototype = _.extend({}, new blink.theme.styles.basic(), Panamericana2020Style.prototype);
+	Panamericana2020Style.prototype = _.extend({}, new blink.theme.styles.modern(), Panamericana2020Style.prototype);
 
 	blink.theme.styles.Panamericana2020 = Panamericana2020Style;
 
