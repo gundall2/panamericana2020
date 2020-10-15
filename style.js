@@ -1,18 +1,18 @@
 (function (blink) {
 	'use strict';
 
-	var panamericana2020Style = function () {
+	var Panamericana2020Style = function () {
 			blink.theme.styles.basic.apply(this, arguments);
 		},
 		page = blink.currentPage;
 
-	panamericana2020Style.prototype = {
+	Panamericana2020Style.prototype = {
 		//BK-15873 añadimos el estilo basic como parent para la herencia de los estilos del CKEditor
 		parent: blink.theme.styles.basic.prototype,
-		bodyClassName: 'content_type_clase_panamericana2020',
+		bodyClassName: 'content_type_clase_Panamericana2020',
 		extraPlugins: ['image2'],
 		ckEditorStyles: {
-			name: 'panamericana2020',
+			name: 'Panamericana2020',
 			styles: [
 
 				{ name: 'Título 1', element: 'h4', attributes: { 'class': 'bck-title1'} },
@@ -123,9 +123,9 @@
 		//BK15873 Quitamos la funcion getEditorStyles para que herede de parent
 	};
 
-	panamericana2020Style.prototype = _.extend({}, new blink.theme.styles.basic(), panamericana2020Style.prototype);
+	Panamericana2020Style.prototype = _.extend({}, new blink.theme.styles.basic(), Panamericana2020Style.prototype);
 
-	blink.theme.styles.panamericana2020 = panamericana2020Style;
+	blink.theme.styles.Panamericana2020 = Panamericana2020Style;
 
 })( blink );
 
@@ -146,8 +146,8 @@ $(document).ready(function () {
 		});
 
 	// BK-8433 cambiamos el logo de las slides por el del dominio
-	var src_logo = $('.content_type_clase_panamericana2020').find('.logo_slide').attr('logo_dominio');
+	var src_logo = $('.content_type_clase_Panamericana2020').find('.logo_slide').attr('logo_dominio');
 	if (typeof(src_logo) != 'undefined' && src_logo && src_logo != '' && src_logo.indexOf('gif1x1.gif') == -1) {
-		$('.content_type_clase_panamericana2020').find('.logo-publisher').css('background-image', "url('"+src_logo+"')");
+		$('.content_type_clase_Panamericana2020').find('.logo-publisher').css('background-image', "url('"+src_logo+"')");
 	}
 });
