@@ -31,21 +31,19 @@
 			]
 		},
 
-		init: function (scope) {
-			var that = scope || this;
+		init: function() {
 			//BK-15873 Utilizamos this.parent declarada al inicio de la clase
-			this.parent.init.call(that);
-			that.addActivityTitle();
+			this.parent.init.call(this.parent, this);
+			this.addActivityTitle();
 			if(window.esWeb) return;
-			that.addPageNumber();
-			that.formatCarouselindicators();
-			that.addSlideNavigators();
+			this.addPageNumber();
+			this.formatCarouselindicators();
+			this.addSlideNavigators();
 		},
 
 		removeFinalSlide: function (scope) {
-			var that = scope || this;
 			//BK-15873 Utilizamos this.parent declarada al inicio de la clase
-			this.parent.removeFinalSlide.call(that, true);
+			this.parent.removeFinalSlide.call(this.parent, this, true);
 		},
 
 		addActivityTitle: function () {
