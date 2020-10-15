@@ -18,7 +18,7 @@ color: black !important;
     background: #fac592;
 }
 
-.content_type_clase_Panamericana2020 #actividad .content .header .title h3 {
+.content_type_clase_panamericana2020 #actividad .content .header .title h3 {
     color: #DA812D;
 }
 
@@ -31,7 +31,7 @@ color: black !important;
     font-weight: bold;
 }
 
-.content_type_clase_Panamericana2020 .logo-publisher {
+.content_type_clase_panamericana2020 .logo-publisher {
     background-image: url(/images/LOGO-PANAMERICANA-ok-500px_399724.png);
     height: 50px;
     width: 400px;
@@ -39,15 +39,15 @@ color: black !important;
     margin-right: -100px;
 }
 
-.content_type_clase_Panamericana2020 .publisher-navbar .dropdown button, .content_type_clase_Panamericana2020 .publisher-navbar li {
+.content_type_clase_panamericana2020 .publisher-navbar .dropdown button, .content_type_clase_panamericana2020 .publisher-navbar li {
     background: #da812d;
 }
 
-.content_type_clase_Panamericana2020 .publisher-navbar .dropdown button {
+.content_type_clase_panamericana2020 .publisher-navbar .dropdown button {
     color: #ffffff;
 }
 
-.content_type_clase_Panamericana2020 .publisher-navbar .dropdown .caret {
+.content_type_clase_panamericana2020 .publisher-navbar .dropdown .caret {
     border-color: #ffffff transparent transparent
 }
 
@@ -64,11 +64,11 @@ color: black !important;
     font-size: 1.5rem;
 }
 
-.content_type_clase_Panamericana2020 .publisher-navbar .dropdown li a {
+.content_type_clase_panamericana2020 .publisher-navbar .dropdown li a {
     color: #da812d;
 }
 
-.content_type_clase_Panamericana2020 .slider-indicators li.active, .content_type_clase_Panamericana2020 .publisher-navbar li:hover {
+.content_type_clase_panamericana2020 .slider-indicators li.active, .content_type_clase_panamericana2020 .publisher-navbar li:hover {
     background: #da812d;
 }
 
@@ -79,7 +79,7 @@ color: black !important;
     background-color: #da812d;
 }
 
-.content_type_clase_Panamericana2020 .publisher-navbar li:hover {
+.content_type_clase_panamericana2020 .publisher-navbar li:hover {
     background-color: #da812d;
 }
 
@@ -115,13 +115,13 @@ display: none !important;
     padding-bottom: 30px;
 }
 
-.content_type_clase_Panamericana2020 .publisher-navbar li {
+.content_type_clase_panamericana2020 .publisher-navbar li {
     color: #da812d;
     background: transparent;
     opacity: 100;
 }
 
-.content_type_clase_Panamericana2020 .slider-indicators li.active, .content_type_clase_Panamericana2020 .publisher-navbar li:hover {
+.content_type_clase_panamericana2020 .slider-indicators li.active, .content_type_clase_panamericana2020 .publisher-navbar li:hover {
     background: #da812d;
     color: #fff;
     border-radius: 10px;
@@ -135,12 +135,12 @@ display: none !important;
     color: #fff !important;
 }
 
-.content_type_clase_Panamericana2020 .publisher-navbar .dropdown button {
+.content_type_clase_panamericana2020 .publisher-navbar .dropdown button {
     color: #ffffff;
     border-radius: 10px;
 }
 
-.content_type_clase_Panamericana2020 .slider-indicators {
+.content_type_clase_panamericana2020 .slider-indicators {
     background-color: transparent;
 }
 
@@ -233,7 +233,7 @@ body:not(.isTablet) #indice .units ul li.active:not(.disabled) a .title {
 }
 
 /*título slide*/
-.content_type_clase_Panamericana2020 #actividad .content .header .title h3:before {
+.content_type_clase_panamericana2020 #actividad .content .header .title h3:before {
     content: " ";
     width: 100px;
     padding: 5px;
@@ -512,20 +512,20 @@ actividad .workspace label {
 }
 
 /*------ CAMBIOS NAVBAR ------*/
-.content_type_clase_Panamericana2020 .publisher-navbar {
+.content_type_clase_panamericana2020 .publisher-navbar {
     background-image: url(/images/activity_other_imported/Header-Navbar_1400_65.jpg);
     background-size: cover;
     background-position-x: right;
     background-repeat: no-repeat;
 }
 @media (max-width: 650px) {
-.content_type_clase_Panamericana2020 .publisher-navbar {
+.content_type_clase_panamericana2020 .publisher-navbar {
     background: #D3D3D3;
   }
 }
 /*Logo en responsive*/
 @media (max-width: 560px) {
-.content_type_clase_Panamericana2020 .logo-publisher {
+.content_type_clase_panamericana2020 .logo-publisher {
     display: none;
   }
 }
