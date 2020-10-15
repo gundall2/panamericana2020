@@ -9,7 +9,7 @@
 	Panamericana2020Style.prototype = {
 		//BK-15873 añadimos el estilo basic como parent para la herencia de los estilos del CKEditor
 		parent: blink.theme.styles.basic.prototype,
-		bodyClassName: 'content_type_clase_Panamericana2020',
+		bodyClassName: 'content_type_clase_panamericana2020',
 		extraPlugins: ['image2'],
 		ckEditorStyles: {
 			name: 'Panamericana2020',
