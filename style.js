@@ -2,12 +2,12 @@
 	'use strict';
 
 	var panamericana2020Style = function () {
-		blink.theme.styles.modern.apply(this, arguments);
+		blink.theme.styles.panamericana2020.apply(this, arguments);
 	},
 	page = blink.currentPage;
 
 	panamericana2020Style.prototype = {
-		parent: blink.theme.styles.modern.prototype,
+		parent: blink.theme.styles.panamericana2020.prototype,
 		bodyClassName: 'content_type_clase_panamericana2020',
 		extraPlugins: ['image2'],
 		ckEditorStyles: {
@@ -29,7 +29,7 @@
 				{ name: 'Caja 3', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-3' } }
 			]
 		},
-
+1
 		init: function () {
 			this.parent.init.call(this.parent, this);
 		},
@@ -39,7 +39,7 @@
 		}
 	};
 
-	panamericana2020Style.prototype = _.extend({}, new blink.theme.styles.modern(), panamericana2020Style.prototype);
+	panamericana2020Style.prototype = _.extend({}, new blink.theme.styles.panamericana2020(), panamericana2020Style.prototype);
 	blink.theme.styles.panamericana2020 = panamericana2020Style;
 
 })( blink );
